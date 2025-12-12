@@ -33,10 +33,13 @@ const exercise1Array = [
 
 // Your solution here (one-line arrow function):
 // const exercise1Result1 = 
-
+const exercise1Result1 = exercise1Array.filter(name => name.length > 18);
+console.log("Example 2 - One-line:", exercise1Array); 
 // Your solution here (regular arrow function):
 // const exercise1Result2 = 
-
+const exercise1Result2 = exercise1Array.filter((name) => {
+  return name.length > 18;
+});
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
 // console.log("Exercise 1 - Regular:", exercise1Result2);
@@ -57,10 +60,14 @@ const exercise2Array = [5, -3, 10, -8, 15, -1, 20];
 
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
-
+const exercise2Result1 = exercise2Array.filter(e => e > 0);
+console.log("Example 3 - One-line:", exercise2Result1);
 // Your solution here (regular arrow function):
 // const exercise2Result2 = 
-
+const exercise2Result2 = exercise2Array.filter((e) => {
+  return e > 0;
+});
+console.log("Example 3 - Regular:", exercise2Result2);
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
 // console.log("Exercise 2 - Regular:", exercise2Result2);

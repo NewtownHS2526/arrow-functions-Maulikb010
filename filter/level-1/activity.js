@@ -112,10 +112,12 @@ const exercise1Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Your solution here (one-line arrow function):
 // const exercise1Result1 = 
-
+const exercise1Result1 = exercise1Array.filter (bet => bet % 2 === 1);
 // Your solution here (regular arrow function):
 // const exercise1Result2 = 
-
+const arrow1 = exercise1Array.filter((odd2) => {
+  return odd2 % 2 === 0;
+});
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
 // console.log("Exercise 1 - Regular:", exercise1Result2);
@@ -136,10 +138,12 @@ const exercise2Array = ["apple", "banana", "kiwi", "orange", "grape"];
 
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
-
+const exercise2Result1 = words.filter(result => result.length > 5);
 // Your solution here (regular arrow function):
 // const exercise2Result2 = 
-
+const exercise2Result2 =  words.filter((result2) => {
+  return result2.length > 5;
+});
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
 // console.log("Exercise 2 - Regular:", exercise2Result2);
@@ -160,7 +164,7 @@ const exercise3Array = [15, 8, 22, 5, 30, 12, 18];
 
 // Your solution here (one-line arrow function):
 // const exercise3Result1 = 
-
+const exercise3Result1 = exercise3Array.filter(n => n > 10);
 // Your solution here (regular arrow function):
 // const exercise3Result2 = 
 
@@ -186,10 +190,11 @@ const exercise4Array = ["red", "blue", "green", "yellow", "purple"];
 
 // Your solution here (one-line arrow function):
 // const exercise4Result1 = 
-
+const exercise4Result1 = exercise4Array.filter(colors = colors);
 // Your solution here (regular arrow function):
 // const exercise4Result2 = 
-
+const exercise4Result2 = exercise4Array.filter(ref => ref.length > 3);
+console.log("Example 2 - One-line:", exercise4Array);
 // Uncomment to test:
 // console.log("Exercise 4 - One-line:", exercise4Result1);
 // console.log("Exercise 4 - Regular:", exercise4Result2);
@@ -210,10 +215,13 @@ const exercise5Array = [2, 4, 6, 8, 10, 11, 12, 13, 14];
 
 // Your solution here (one-line arrow function):
 // const exercise5Result1 = 
-
+const exercise5Result1 = exercise5Array.filter(a => a % 2 === 0);
+console.log("Example 1 - One-line:", exercise5Array);
 // Your solution here (regular arrow function):
 // const exercise5Result2 = 
-
+const exercise5Result2 = exercise5Array.filter((a) => {
+  return f % 2 === 0;
+});
 // Uncomment to test:
 // console.log("Exercise 5 - One-line:", exercise5Result1);
 // console.log("Exercise 5 - Regular:", exercise5Result2);
