@@ -89,10 +89,13 @@ const exercise3Array = ["javascript", "python", "java", "c++", "html", "css"];
 
 // Your solution here (one-line arrow function):
 // const exercise3Result1 = 
-
+const exercise3Result1 = exercise3Array.filter(word => word.length > 6);
+console.log("Example 2 - One-line:", exercise3Array); 
 // Your solution here (regular arrow function):
 // const exercise3Result2 = 
-
+const exercise3Result2 = exercise3Array.filter((word) => {
+  return word.length > 6;
+});
 // Uncomment to test:
 // console.log("Exercise 3 - One-line:", exercise3Result1);
 // console.log("Exercise 3 - Regular:", exercise3Result2);
@@ -113,10 +116,14 @@ const exercise4Array = [12, 45, 8, 23, 56, 9, 34, 67];
 
 // Your solution here (one-line arrow function):
 // const exercise4Result1 = 
-
+const exercise4Result1 = exercise4Array.filter(n => n > 14);
+console.log("Example 3 - One-line:", exercise4Result1);
 // Your solution here (regular arrow function):
 // const exercise4Result2 = 
-
+const exercise4Result2 = exercise4Array.filter((n) => {
+  return n > 14;
+});
+console.log("Example 3 - Regular:", exercise4Array);
 // Uncomment to test:
 // console.log("Exercise 4 - One-line:", exercise4Result1);
 // console.log("Exercise 4 - Regular:", exercise4Result2);
@@ -140,10 +147,13 @@ const exercise5Array = ["apple", "banana", "cherry", "date", "elderberry"];
 
 // Your solution here (one-line arrow function):
 // const exercise5Result1 = 
-
+const exercise5Result1 = exercise5Array.filter(word => word.length > 5);
+console.log("Example 2 - One-line:", exercise5Array);
 // Your solution here (regular arrow function):
 // const exercise5Result2 = 
-
+const exercise5Result2 = exercise5Array.filter((word) => {
+  return word.length > 5;
+});
 // Uncomment to test:
 // console.log("Exercise 5 - One-line:", exercise5Result1);
 // console.log("Exercise 5 - Regular:", exercise5Result2);
