@@ -111,10 +111,12 @@ const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
 // const exercise1Result1 = 
-
+const exercise1Result1 =  exercise1Array.map(n => n * 3);
 // Your solution here (regular arrow function):
 // const exercise1Result2 = 
-
+ const exercise1Result2 = exercise1Array.map((n) => {
+  return n * 3;
+});
 // Uncomment to test:
 // console.log("Exercise 1 - One-line:", exercise1Result1);
 // console.log("Exercise 1 - Regular:", exercise1Result2);
@@ -135,10 +137,12 @@ const exercise2Array = ["hello", "world", "javascript"];
 
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
-
+const exercise2Result1 = exercise2Array.map(string => `!: ${string}`);
 // Your solution here (regular arrow function):
 // const exercise2Result2 = 
-
+const exercise2Result2 = exercise2Array.map((string) => {
+  return `!: ${string}`;
+});
 // Uncomment to test:
 // console.log("Exercise 2 - One-line:", exercise2Result1);
 // console.log("Exercise 2 - Regular:", exercise2Result2);
@@ -159,10 +163,12 @@ const exercise3Array = [10, 20, 30, 40];
 
 // Your solution here (one-line arrow function):
 // const exercise3Result1 = 
-
+const exercise3Result1 =  exercise3Array.map(n => n / 2);
 // Your solution here (regular arrow function):
 // const exercise3Result2 = 
-
+const exercise3Result2 = exercise3Array.map((n) => {
+  return n / 2;
+});
 // Uncomment to test:
 // console.log("Exercise 3 - One-line:", exercise3Result1);
 // console.log("Exercise 3 - Regular:", exercise3Result2);

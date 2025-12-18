@@ -32,10 +32,12 @@ const exercise1Array = [
 
 // Your solution here (one-line arrow function):
 // exercise1Array.forEach(
-
+exercise1Array.forEach(person => console.log(`${person.name} is ${person.age} years old`));
 // Your solution here (regular arrow function):
 // exercise1Array.forEach((
-
+exercise1Array.forEach((person) => {
+  console.log(`${person.name} is ${person.age} years old`);
+});
 // Expected output:
 // "Alice is 25 years old"
 // "Bob is 30 years old"
@@ -56,10 +58,15 @@ const exercise2Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
 // exercise2Array.forEach(
-
+exercise2Array.forEach (num => {
+  if (num % 2 === 0) console.log(num);
+});
 // Your solution here (regular arrow function):
 // exercise2Array.forEach((
-
+exercise2Array.forEach("even numbers");
+exercise1Array.forEach((num) => {
+  console.log(n);
+});
 // Expected output: 2, 4 (each on a new line)
 
 /*
@@ -107,10 +114,18 @@ let exercise4Result = "";
 
 // Your solution here (one-line arrow function):
 // exercise4Array.forEach((
-
+exercise4Array.forEach(num => {
+  if (exercise4Result === "") {
+    exercise4Result += num;
+  } else {
+    exercise4Result += " -> " + num;
+  }});
 // Your solution here (regular arrow function):
 // exercise4Array.forEach((
-
+exercise4Array.forEach("print results");
+exercise4Result.forEach((num) => {
+  console.log(num);
+});
 // Uncomment to test:
 // console.log("Exercise 4 - Result:", exercise4Result);
 // Expected: "10 -> 20 -> 30 -> 40"
@@ -131,10 +146,15 @@ let exercise5Count = 0;
 
 // Your solution here (one-line arrow function):
 // exercise5Array.forEach(
-
+exercise5Array.forEach (num => {
+  if (num > 20) exercise5Count++;
+}); 
 // Your solution here (regular arrow function):
 // exercise5Array.forEach((
-
+exercise5Array.forEach((num) => {
+  if (num > 20) {
+    exercise5Count++;
+  } });
 // Uncomment to test:
 // console.log("Exercise 5 - Count:", exercise5Count);
 // Expected: 2
